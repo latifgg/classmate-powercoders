@@ -1,0 +1,52 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.3px;
+ }
+ body{
+    background: rgb(134, 181, 218);
+    
+ }
+ body .card-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;      
+ }
+ .card{
+
+    cursor: pointer;
+    display: flex;
+    background: white;
+    flex-direction: column;
+    min-width: 200px;
+    max-width: 300px;
+    text-align: center;
+    min-height: 350px;
+    border-radius: 1rem;
+    box-shadow: 1px;
+    margin: 1.5rem;
+    transition: 0.3s;
+
+   
+ }
+ .card-container .card .is-flipped {
+    transform: rotateY(180deg);
+  }
+  
+ .card:hover{
+    transform: scale(1.1);
+}
+.card .cardInfo{
+    margin: 0.5rem;
+}
+ .class-name{
+    font-weight: 700;
+    
+}
+.student-name{
+    color: red;
+}
+
